@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+body {
+    background-color: royalblue;
+}
+
+.page {
+    width: 1240px;
+    background-color: white;
+    margin: 0 auto;
+    border:grey solid 2px
+    
+}
+.main {
+    min-height: 100vh;
+    
+
+}
+.menu {
+    background-color: #1C2D61;
+    &__list {
+        display: flex;
+        justify-content: space-evenly;
+        list-style: none;
+        
+    }
+    &__item {
+        padding: 20px;
+        font-size: 18px;
+        text-transform: uppercase;
+    }
+    &__link {
+        display: block;
+        padding: 10px 15px;
+        text-decoration: none;
+        border: #1C2D61 solid 1px;
+        color: white;
+        transition: 0.2s;
+        &:hover {
+            border: solid 1px white;
+            
+        }
+    }
+}
+
+.info {
+    width: 1024px;
+    margin: 60px auto;
+    &__intro {
+        text-align: center;
+        font-size: 48px;
+        padding: 20px 20px;
+    }
+    &__list {
+        margin: 20px 30px;
+    }
+    &__item {
+        font-size: 24px;
+        padding: 15px;
+    }
+    &__link {
+        color: gray;
+        text-decoration: none;
+        transition: 0.2s;
+        &:hover {
+            color: black;
+
+        }
+    }
+}
+.weeks {
+    min-height: 100vh;
+}
+
+.days {
+    margin: 50px;
+    &__intro {
+        font-size: 36px;
+        text-align: center;
+        padding: 20px 0;
+    }
+    &__list {
+        margin-top: 30px;
+        padding: 20px 30px;
+        font-size: 24px;
+    }
+    &__item {
+        padding: 20px 10px;
+    }
+    &__image {
+        width: 100%;
+        padding: 10px;
+        margin-top: 20px;
+    }
+    &__txt {
+        padding: 20px;
+        letter-spacing: 1px;
+    }
+}

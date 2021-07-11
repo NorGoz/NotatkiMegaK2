@@ -1,0 +1,279 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Moje Notatki MegaK</title>
+</head>
+<body>
+    <div class="page">
+        <header class="main">
+            <nav class="main__menu menu">
+                <ul class="menu__list">
+                    <li class="menu__item"><a href="#weekFirst" class="menu__link">Tydzień 1</a></li>
+                    <li class="menu__item"><a href="" class="menu__link">Tydzień 2</a></li>
+                    <li class="menu__item"><a href="" class="menu__link">Tydzień 3</a></li>
+                    <li class="menu__item"><a href="" class="menu__link">Tydzień 4</a></li>
+                    <li class="menu__item"><a href="" class="menu__link">Tydzień 5</a></li>
+                </ul>
+            </nav>
+            <section class="main__info info">
+                <h2 class="info__intro">Pierwszy etap MegaK</h2>
+                <ul class="info__list">
+                    <li class="info__item">
+                        <h3>Tydzień 1 - wstęp do języka JavaScript</h3>
+                        zmienne, operacje i operatory, pętla, działanie na tekście 
+                    </li>
+                    <li class="info__item">
+                        <h3>Tydzień 2 - zaawansowane działania na tablicach oraz obiektowość </h3>
+                        wstęp teoretyczny oraz praktyka w JavaScript
+                    </li>
+                    <li class="info__item">
+                        <h3>Tydzień 3 - asynchroniczność JavaScript</h3>
+                        czym jest i jak ją profesjonalnie obsługiwać
+                    </li>
+                    <li class="info__item">
+                        <h3>Tydzień 4 - wstęp do przeglądarkowego JS-a i metody związane z DOM przeglądarki</h3>
+                        dodatkowe, nieomówione jeszcze elementy ES2015-ES2021
+                    </li>
+                    <li class="info__item">
+                        <h3>Tydzień 5 - projekt</h3>
+                        obiektowość w praktyce
+                    </li>
+                </ul>
+            </section>
+        </header>
+        <section id='weekFirst' class="weekFirst weeks">
+            <nav class="weekFirst__menu menu">
+                <ul class="menu__list">
+                    <li class="menu__item"><a href="#weekFirstDayOne" class="menu__link">Dzień 1</a></li>
+                    <li class="menu__item"><a href="#weekFirstDayTwo" class="menu__link">Dzień 2</a></li>
+                    <li class="menu__item"><a href="#weekFirstDayThree" class="menu__link">Dzień 3</a></li>
+                    <li class="menu__item"><a href="#weekFirstDayFour" class="menu__link">Dzień 4</a></li>
+                    <li class="menu__item"><a href="#weekFirstDayFive" class="menu__link">Dzień 5</a></li>
+                </ul>
+            </nav>
+            <section class="weekFirst__info info">
+                <h2 class="info__intro">Pierwszy Tydzień</h2>
+                <ul class="info__list">
+                    <li class="info__item">
+                        <h3><a href="#weekFirstDayOne" class="info__link">Dzień 1 - Czym jest JavaScript</a></h3>
+                        Ogólne informacje o JavaScript 
+                    </li>
+                    <li class="info__item">
+                        <h3><a href="#weekFirstDayTwo" class="info__link">Dzień 2 - Operatory</a></h3>
+                        Dekrementacja, inkrementcja
+                    </li>
+                    <li class="info__item">
+                        <h3><a href="#weekFirstDayThree" class="info__link">Dzień 3 - Typy danych</a></h3>
+                        Proste, złożone
+                    </li>
+                    <li class="info__item">
+                        <h3><a href="#weekFirstDayFour" class="info__link">Dzień 4 - Tablice, pętla, prompt</a></h3>
+                        Metody
+                    </li>
+                    <li class="info__item">
+                        <h3><a href="#weekFirstDayFive" class="info__link">Dzień 5  - If, obiekt String, ćwiczenia</a></h3>
+                        Metody, ćwiczenia
+                    </li>
+                </ul>
+            </section>
+            <article id='weekFirstDayOne' class="weekFirst__days">
+                <h1 class="days__intro">Dzień 1 - Czym jest JavaScript</h1>
+                <ul class='days__list'>
+                    <li class="days__item"><strong>język wysokiego poziomu</strong> - daleki od kodu mszynowego, wysoki poziom abstrakcji względem języka maszynowego</li>
+                    <li class="days__item"><strong>słabo typowany</strong> - nie musimy wskazywać z jakich typów korzystamy oraz panują ''luźne zasady". Umożliwia niejawna konwersje np.szybka zmiana z stringa w number
+                    </li>
+                    <li class="days__item"><strong>Dynamicznie typowany</strong> - typy mogą się zmieniać swobodnie, wartości  przypisywana w trakcie trwania programu.
+                    </li>
+                    <li class="days__item"><strong>Teoretycznie interpretowany ale moze byc kompilowany</strong>(Interpretowany -  jakiś interpreter czytany linijka po linijce zmieniany na maszynowy w momencie w którym wywołujemy program
+                        / kompilowany - zamienia sie jak najbardziej w maszynowy i jest szybszy).</li>
+
+                        <p class="days__text"><strong> 3 zmienne w JavaScript </strong></p>
+                     <p class="days__txt"> - var (nie korzystamy już niego) </p>
+                     <p class="days__txt"> - let  </p>
+                     <p class="days__txt"> - const - zmienna tylko do odczytu </p>
+                     <p class="days__txt"><strong>Atrybuty zmiennej w JavaScript</strong></p>
+                     <p class="days__txt"> - Identyfikator (nazwa)</p>
+                     <p class="days__txt"> - Referencja/wskaźnik do miejsca w pamięci gdzie przechowywana jest wartość</p>
+                     <p class="days__txt"></p>
+                     </ul>
+                     
+            </article>
+            <article id='weekFirstDayTwo' class="weekFirst__days">
+                <h1 class="days__intro">Dzień 2 - Operatory</h1>
+                <ul class="days__list">
+                    <li class="days__item"><strong>Dekrementacja</strong> - zmniejszenie wartości zmiennej o jeden (i--)
+                        <li style="list-style: none;" class="days__item">
+                            <strong>Postdekrementacja</strong> - najpierw zwraca wartość zmiennej, a dopiero potem ją modyfikuje (i--)
+                            <img src="./photos/postdekrementacja.png" alt="postdekrementacja" class="days__image">
+                         </li>
+                        <li style="list-style: none;" class="days__item">
+                            <strong>Predekrementacja</strong> - najpierw modyfikuje wartość i dopiero wtedy ją zwraca (--i)
+                            <img src="./photos/predekrementacja.png" alt="predekrementacja" class="days__image">
+                         </li>
+                     </li> 
+                     <li class="days__item"><strong>Inkrementcja</strong> - zwiększa wartość zmiennej o jeden (i++)
+                        <li style="list-style: none;" class="days__item"><strong>Postinkrementcja</strong> - najpierw zwraca wartość zmiennej, a dopiero potem ją modyfikuje (i++)
+                            <img src="./photos/postinkrementacja.png" alt="postinkrementacja" class="days__image">
+                        </li>
+
+                        <li style="list-style: none;" class="days__item"><strong>Preinkrementcja</strong> - najpierw modyfikuje wartość i dopiero wtedy ją zwraca(++i)
+                            <img src="./photos/preinkrementacja.png" alt="preinkrementacja" class="days__image">
+                        </li>
+                    </li>
+                    <li class='days__item'>
+                        <h2>Operatory Porównania</h2> 
+                        Dzięki tym operatorom możesz porównać lewą stronę wyrażenia do prawej. Wynikiem takiego porównania jest zawsze boolean, czyli true lub false. 
+                        <p class='days__txt'>'>' - większy</p>
+                        <p class='days__txt'> '<' - mniejszy</p>
+                        <p class='days__txt'>'>=' - większy lub równy</p>
+                        <p class='days__txt'> '<=' - mniejszy lub równy</p>
+                        <img src="./photos/operatoryporównania.png" alt="operatory porównania" class="days__image">
+
+                    </li>
+
+                    <li class="days__item"><strong>Różnica między <span style="color: #2F4BA1;">==</span> i <span style="color: #2F4BA1;" >===</span></strong>
+                    <p class='days__txt'><strong><span style="color: #2F4BA1;">== </span> - konwertuje </strong>  wartości zmiennych na ten sam typ przed wykonaniem porównania.</p>
+                    <p class='days__txt'> <strong><span style="color: #2F4BA1;">=== </span></strong> - nie zrobi żadnej konwerjsi typu, zwróci true tylko gdy obie wartości i typy są identyczne.
+                     </p class='days__txt'>
+                     <img src='./photos/porownanie.png' alt="porównanie" class="days__image">
+
+                    </li>
+
+                    <li class="days__item"><strong>Ampersand logiczny (&&)</strong> - logiczne "i"  warunek po lewej i po prawej stronie musi zwracać true
+                     <img src="./photos/operatorii.png" alt="operatorii" class="days__image">
+                    </li>
+
+                    <li class="days__item"><strong>Suma logiczna (||)</strong> - logiczne "lub" jeden warunek musi zwracać true
+                        <img src="./photos/operatorlub.png" alt="operatorlub" class="days__image">
+                    </li>
+                   
+                    </ul>
+            </article>
+            <article id='weekFirstDayThree' class="weekFirst__days">
+                <h1 class="days__intro">Dzień 3 - Typy danych</h1>
+                <ul class="days__list">
+                    <li class="days__item">
+                        <p class="days__txt"><h3>Typy Proste</h3> typy te są niemutowalne (nie można ich zmieniać), są kopiowane przez wartość (by value).</p>
+                        <p class="days__txt">Za pomocą wyrażenia 'typeof' możemy sprawidzć typ zmiennej.  np. typeof 'Text' zwroci nam string</p>
+                        <p class="days__txt"> - Number</p>
+                        <p class="days__txt"> - String</p>
+                        <p class="days__txt"> - Boolean</p>
+                        <p class="days__txt"> - Undefined</p>
+                        <p class="days__txt"> - Null</p>
+                        <img src="./photos/typyproste.png" alt="typyproste" class="days__image">
+                        <h3>typeof</h3> 
+                        <p class="days__txt">typeof - sprawdza nam tym zmiennej lub wartości</p>
+                        <img src="./photos/typeof2.png" alt="typyof" class="days__image">
+                    </li>
+                    <li class="days__item">
+                        <h3>Typy Złożone</h3> <span>nie mają przypisanej bezpośrednio wartości, a tylko wskazują na miejsce w pamięci, gdzie te dane są przetrzymywane.</span>
+                        <p class="days__txt"> - Object</p>
+                        <p class="days__txt"> - Array (tablica)</p>
+                        </li>
+                </ul>
+            </article>
+            <article id='weekFirstDayFour' class="weekFirst__days">
+                <h1 class="days__intro">Dzień 4 - Tablice, pętla, prompt</h1>
+                <ul class="days__list">
+                    <li class="days__item">
+                        <h3>Tablice</h3>
+                        <p class="days__txt">
+                          Tablice - mogą przechowywać wiele różnych zmiennych (różne typy danych). Ich zapis to [wartość1,wartość2, itd] <br> Aby dostać się do konkretnego elementu korzystamy z indexu nazwaTablicy [index] (Index liczymy od 0) 
+                          <img src="./photos/tablice.png" alt="tablice" class="days__image">
+                        </p>
+                        <p class="days__txt">
+                            Metody: <br> - push - dodaje element do tablicy <br> - splice - usówanie splice(index od którego wycinamy,ile elementów). Kiedy nie podamy drugiego parametu to wycina od podanego indexu do końca
+                        </p>
+                        <img src="./photos/pushsplice.png" alt="metodyNaTablicach" class="days__image">
+                    </li>
+                    <h1 class="days__intro">Pętle </h1>
+                    <li class="days__item">
+                        <h3>Pętla while</h3>
+                         let i =0; <br>
+                        while(podajemy warunek) {działanie}
+                        <img src="./photos/petlawhile.png" alt="petlaWhile" class="days__image">
+                    </li>
+                    <li class="days__item">
+                       <h3>Pętla for</h3>
+                       Składnia :
+                       <img src="./photos/petlafor.png" alt="petlaFor" class="days__image">
+                    </li>
+                    <li class="days__item">
+                        <h3>Prompt + while</h3>
+                        <p class="days__txt">Prompt - specjalna metoda, wyświetli komunikat i prosi o wprowadzenie odpowiedzi, zwraca naszą odpowiedz jako string. Kominukat po prawej stronie to właśnie prompt</p>
+                        <img src="./photos/prompt.png" alt="prompt" class="days__image">
+                    </li>
+                </ul>
+            </article>
+            <article id='weekFirstDayFive' class="weekFirst__days">
+                <h1 class="days__intro">Dzień 5  - if, obiekt String, ćwiczenia</h1>
+                <ul class="days__list">
+                    <li class="days__item">
+                        <h3>if</h3>
+                        <p class="days__txt"> if - Wykonuje blok poleceń, jeśli dany warunek jest spełniony. Jeśli warunek nie jest spełniony, może zostać wykonany inny blok poleceń. wtedy użyjemy 'if else' (warunek){polecenie}. Również możemy użyć słowa klucz 'else'{polecenie} - jeżeli żaden warunek nie jest prawidzwy wykonuje else</p>
+                        <img src="./photos/ifelse.png" alt="ifElse" class="days__image">
+                        Przykłady :
+                        <img src="./photos/przykładyIf1.png" alt="przykladyIf" class="days__image">
+                    </li>
+                    <li class="days__item">
+                        <h3>Metody obiektu</h3>
+                        <p class="days__txt">* Pewne specjalne obiekty w JS dają nam różne możliwości np. <br> console - specjalny obiekty ma swoja metody np. 'console.log()'<br> Math - specjalny obiekt np. 'Math.round(3.14) zaokraglenie' <br> itd.</p>
+                        <p class="days__txt">* Podobne specjalne możliwości istnieją dla róznych podstawowych typów: </p>
+                        <p class="days__txt"> Np. <strong>obiekt typu String </strong> ma możliwość zmniejszenia lub zwiększenia liter. Za pomocą <strong>metody .toUpperCase()</strong> zwiększa litery</p>
+                        Przykładowe metody:
+                        <img src="./photos/metodyString.png" alt="metodyString" class="days__image">
+                        <img src="./photos/metodyString2.png" alt="metodyString" class="days__image">
+                    </li>
+                    <li class="days__item">
+                        <h5>Dlaczego tak to działa?</h5>
+                        JavaScript może dokonać dla naszej wygody niejawnej konwerjsi ()
+                        <br>
+                        Czyli zrobi tak:
+                        <p class="days__txt">1.Zmień wartość <strong>string</strong> na obiekt <strong>String</strong>.</p>
+                        <p class="days__txt">2.Wykonaj metodę obiektu typu <strong>String</strong></p>
+                        <p class="days__txt">3.Zmień z powrotem z obiekt <strong>String </strong> na wartość prostą <strong>string</strong>.</p>
+                    </li>
+                    <h1 class='days__intro'>Ćwiczenia</h1>
+                    <li class="days__item">
+                        <h5>Ćwiczenie obowiązkowe</h5>
+                        Stwórz program, który przyjmie od użytkownika przez <strong>prompt</strong> imię, a następnie nazwisko, na końcu wiek(3prompt-y).
+
+                        Tylko jeżeli wiek to min. 18 to wyświetl w konsoli imię i nazwisko.
+                        <img src="./photos/tydzien1piatek.png" alt="zadaniePiatek" class="days__image">
+                    </li>
+                  
+                    <li class="days__item">
+                        <h5>Ćwiczenie zaawansowane</h5>
+                        Stwórz prosty kalkulator. <br>
+                        Zapytaj użytkownika o pierwszą liczne, drugą i o znak - osobno trzema <strong>prompt.</strong><br>
+                        Następnie za pomocą odpowiednich ifów i operajci wykonaj jedno z działań:
+                        <p class="days__txt">a + b</p>
+                        <p class="days__txt">a - b</p>
+                        <p class="days__txt">a * b</p>
+                        <p class="days__txt">lub a/b</p>
+                        wyświetl wynik działania w konsoli.
+                        <img src="./photos/tydzien1piatekZad2.png" alt="zadaniePiatek" class="days__image">
+                    </li>
+                    <li class="days__item">
+                        <h5>Ćwiczenie z gwiazdką</h5>
+                        <p class="days__txt">Program CrAzY TeXt.</p>
+                        <p class="days__txt">Napisz taki program, który przyjmuje tekst wpisany przez użytkownika przez <strong>prompt</strong>.</p>
+                        <p class="days__txt">NAstępnie w pętli wpisz po kolei każdy pojedynczy znak, ale w ten sposób, aby nieprzyste były zapisane wielką literą, a parzyste - małą.</p>
+                        <p class="days__txt">Np: Hello wyświetl jako: <br> H <br> e <br>L <br>l <br>O</p>
+                        <p class="days__txt">PS. Poszczególne znaki możesz wyciągać z tekstu jak z tablicy. Np.str[1].</p>
+                        <img src="./photos/tydzien1piatekZadanieGwizdka.png" alt="zadaniePiatekGwiazdka" class="days__image">
+                    </li>
+                </ul>
+            </article>
+
+        </section>
+        <footer class="footer"></footer>
+    </div>  
+</body>
+</html>
