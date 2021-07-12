@@ -13,13 +13,13 @@
 <body>
     <div class="page">
         <header class="main">
-            <nav class="main__menu menu">
+            <nav id='mainMenu'class="main__menu menu">
                 <ul class="menu__list">
                     <li class="menu__item"><a href="#weekFirst" class="menu__link">Tydzień 1</a></li>
-                    <li class="menu__item"><a href="" class="menu__link">Tydzień 2</a></li>
-                    <li class="menu__item"><a href="" class="menu__link">Tydzień 3</a></li>
-                    <li class="menu__item"><a href="" class="menu__link">Tydzień 4</a></li>
-                    <li class="menu__item"><a href="" class="menu__link">Tydzień 5</a></li>
+                    <li class="menu__item"><a href="#weekTwo" class="menu__link">Tydzień 2</a></li>
+                    <li class="menu__item"><a href="#weekThree" class="menu__link">Tydzień 3</a></li>
+                    <li class="menu__item"><a href="#weekFour" class="menu__link">Tydzień 4</a></li>
+                    <li class="menu__item"><a href="#weekFive" class="menu__link">Tydzień 5</a></li>
                 </ul>
             </nav>
             <section class="main__info info">
@@ -272,8 +272,372 @@
                     </li>
                 </ul>
             </article>
-
+           
         </section>
+        <!-- Tydzień 2 start -->
+        <section id='weekTwo' class="weekTwo weeks">
+            <nav class="weekTwo__menu menu">
+                <ul class="menu__list">
+                    <li class="menu__item"><a href="#weekTwoDayOne" class="menu__link">Dzień 1</a></li>
+                    <li class="menu__item"><a href="#weekTwoDayTwo" class="menu__link">Dzień 2</a></li>
+                    <li class="menu__item"><a href="#weekTwoDayThree" class="menu__link">Dzień 3</a></li>
+                    <li class="menu__item"><a href="#weekTwoDayFour" class="menu__link">Dzień 4</a></li>
+                    <li class="menu__item"><a href="#weekTwoDayFive" class="menu__link">Dzień 5</a></li>
+                </ul>
+            </nav>   
+        <section class="weekTwo__info info">
+            <h2 class="info__intro">Drugi Tydzień</h2>
+            <ul class="info__list">
+                <li class="info__item">
+                    <h3><a href="#weekTwoDayOne" class="info__link">Dzień 1 - Funkcje</a></h3>
+                    
+                </li>
+                <li class="info__item">
+                    <h3><a href="#weekTwoDayTwo" class="info__link">Dzień 2 - Obiektowość</a></h3>
+                    
+                </li>
+                <li class="info__item">
+                    <h3><a href="#weekTwoDayThree" class="info__link">Dzień 3 - ES6</a></h3>
+                    
+                </li>
+                <li class="info__item">
+                    <h3><a href="#weekTwoDayFour" class="info__link">Dzień 4 - klasy</a></h3>
+                    
+                </li>
+                <li class="info__item">
+                    <h3><a href="#weekTwoDayFive" class="info__link">Dzień 5  - Zaawansowane metody tablicowe</a></h3>
+                   
+                </li>
+            </ul>
+        </section>
+        <article id='weekTwoDayOne' class="weekTwo__days">
+            <h1 class="days__intro">Dzień 1 - Funkcje</h1>
+            <ul class="days__list">
+                <li class="days__item">
+                    <strong>Definicja funkcji</strong> (zwana też deklaracją funkcji) składa się ze słowa kluczowego "function" oraz :
+                    <p class="days__txt"> - Nazwy funkcji</p>
+                    <p class="days__txt"> - Listy argumentów zamkniętych w nawiasach i oddzielonych przecinkami, (argument1,argument2)</p>
+                    <p class="days__txt"> - Instrukjci JavaScript, które definiują funkcje, zamkniętych w nawiasach klamrowych, {kod}</p>
+                    <img src="./photos/funkcje1.png" alt="funkcja" class="days__image">
+                </li>
+                <li class="days__item">
+                    <p class="days__txt">W funkcji chodzi o to żeby coś się wydarzyło w środku na wejściu jakieś dane (w postaci argumentów) i żeby było wyjście ( w postaci słowa return i wartości co się za nim kryje)</p>
+                    <p class="days__txt">return przerywa funkcje, kończy ją.</p>
+                    <img src="./photos/funkcja2.png" alt="funkcja" class="days__image">
+                </li>
+                <li class="days__item">
+                    Zapisy funkcji
+                    <img src="./photos/funkcje3.png" alt="funkcja" class="days__image">
+                </li>
+                <h1 class='days__intro'>Ćwiczenia</h1>
+                <li class="days__item">
+                    <h3>Ćwiczenie 1</h3>
+                    <p class="days__txt">Napisz funkcję, która wyświetla w konsoli wynik mnożenia, dzielenia, dodawania i odejmowania dla dwóch wprowadzonych liczb poprzez prompt. <br> Upewnij się, że przekazane wartości są liczbami. <br> Spróbuj użyć zapisu z function, a potem funkcją strzałkową.</p>
+                    <img src="./photos/week2cw1funkcja.png" alt="weekTwoTask1" class="days__image">
+                </li>
+                <li class="days__item">
+                    <h3>Ćwiczenie 2</h3>
+                    <p class="days__txt">Przyjmij przez prompt liczbę podaną przez użytkownika.Zmień string na number. <br> Stwórz funkcję checkNumber, do której przekażesz tę liczbę. W funkcji sprawdź czy liczba jest parzysta - jeżeli tak to zwróć wartość z funkcji even, a jak nie z funkcji odd. <br> Stwórz 2 pozostałe funkcje. even ma zwracać liczbę, którą dostaje, a odd liczbę którą dostaje pomnożoną przez 2. <br> Spróbuj użyć zapisu z function, a potem funkcją strzałkową.</p>
+                    <img src="./photos/week2cw2funkcja.png" alt="weekTwoTask2" class="days__image">
+                </li>
+            </ul>
+        </article>
+        <article id='weekTwoDayTwo' class="weekTwo__days">
+            <h1 class="days__intro"></h1>
+            <ul class="days__list">
+                <li class="days__item">
+                    <p class="days__txt"></p>
+                </li>
+            </ul>
+        </article>
+        <article id='weekTwoDayThree' class="weekTwo__days">
+            <h1 class="days__intro"></h1>
+            <ul class="days__list">
+                <li class="days__item">
+                    <p class="days__txt"></p>
+                </li>
+            </ul>
+        </article>
+        <article id='weekTwoDayFour' class="weekTwo__days">
+            <h1 class="days__intro"></h1>
+            <ul class="days__list">
+                <li class="days__item">
+                    <p class="days__txt"></p>
+                </li>
+            </ul>
+        </article>
+        <article id='weekTwoDayFive' class="weekTwo__days">
+            <h1 class="days__intro"></h1>
+            <ul class="days__list">
+                <li class="days__item">
+                    <p class="days__txt"></p>
+                </li>
+            </ul>
+        </article>
+    </section>
+
+    <!-- Tydzień 3 -->
+    <section id='weekThree' class="weekThree weeks">
+        <nav class="weekThree__menu menu">
+            <ul class="menu__list">
+                <li class="menu__item"><a href="#weekThreeDayOne" class="menu__link">Dzień 1</a></li>
+                <li class="menu__item"><a href="#weekThreeDayTwo" class="menu__link">Dzień 2</a></li>
+                <li class="menu__item"><a href="#weekThreeDayThree" class="menu__link">Dzień 3</a></li>
+                <li class="menu__item"><a href="#weekThreeDayFour" class="menu__link">Dzień 4</a></li>
+                <li class="menu__item"><a href="#weekThreeDayFive" class="menu__link">Dzień 5</a></li>
+            </ul>
+        </nav>   
+    <section class="weekThree__info info">
+        <h2 class="info__intro">Trzeci Tydzień</h2>
+        <ul class="info__list">
+            <li class="info__item">
+                <h3><a href="#weekThreeDayOne" class="info__link">Dzień 1 - Asynchroniczność </a></h3>
+                
+            </li>
+            <li class="info__item">
+                <h3><a href="#weekThreeDayTwo" class="info__link">Dzień 2 </a></h3>
+                
+            </li>
+            <li class="info__item">
+                <h3><a href="#weekThreeDayThree" class="info__link">Dzień 3 </a></h3>
+                
+            </li>
+            <li class="info__item">
+                <h3><a href="#weekThreeDayFour" class="info__link">Dzień 4 </a></h3>
+                
+            </li>
+            <li class="info__item">
+                <h3><a href="#weekThreeDayFive" class="info__link">Dzień 5  </a></h3>
+               
+            </li>
+        </ul>
+    </section>
+    <article id='weekThreeDayOne' class="weekThree__days">
+        <h1 class="days__intro">Dzień 1 - Asynchroniczność</h1>
+        <ul class="days__list">
+            <li class="days__item">
+              
+                <p class="days__txt">Asynchroniczność - to brak oczekiwania na zakończenie jednego zadania podczas gdy wykonuje się inne zadanie. Różni się od wielowątkowości pewnego rodzaju bezwładnością. Możemy reagować na zakończenie danego zadania, ale nie mamy pełnej kontroli nad tym jak zadanie jest wykonywane w środku. </p>
+               
+            </li>
+            <h3>Asynchroniczność a JavaScript</h3>
+            <li class="days__item">
+                <p class="days__txt">W JavaScript bardzo wiele API jest asynchroniczne, tzn. odbieranie danych polega na reagowaniu np. na callback.</p>
+                <p class="days__txt">Nawet podstawowy JavaScript zawiera asynchroniczne funkcje/metody.</p>
+                <p class="days__txt">Najprostszym przykładem jest setTimeout i setInterval:</p>
+               <strong>setTimeout:</strong> 
+                <img src="./photos/week3settimeout.png" alt="setTimeout" class="days__image">
+                <strong>setInterval:</strong>
+                <img src="./photos/week3setinterval.png" alt="setInterval" class="days__image">
+            </li>
+            <li class="days__item">
+                <h3>Przyszłość JavaScript i asynchroniczność</h3>
+                <p class="days__txt">Większość aktualnie powstających API JavaScriptu opiera się w jakimś stopniu na asynchroniczności.</p>
+                <p class="days__txt">Ponieważ nie blokuje to głównego wątku - np. Twojej strony internetowej podczas wykonywania zapytań do sieci czy serwera gdy ten obsługuje zapytania/żądania 
+                    wszystko staje się bardziej "responsywne"</p>
+            </li>
+           
+        </ul>
+    </article>
+    <article id='weekThreeDayTwo' class="weekTwo__days">
+        <h1 class="days__intro"></h1>
+        <ul class="days__list">
+            <li class="days__item">
+                <p class="days__txt"></p>
+            </li>
+        </ul>
+    </article>
+    <article id='weekThreeDayThree' class="weekThree__days">
+        <h1 class="days__intro"></h1>
+        <ul class="days__list">
+            <li class="days__item">
+                <p class="days__txt"></p>
+            </li>
+        </ul>
+    </article>
+    <article id='weekThreeDayFour' class="weekThree__days">
+        <h1 class="days__intro"></h1>
+        <ul class="days__list">
+            <li class="days__item">
+                <p class="days__txt"></p>
+            </li>
+        </ul>
+    </article>
+    <article id='weekThreeDayFive' class="weekThree__days">
+        <h1 class="days__intro"></h1>
+        <ul class="days__list">
+            <li class="days__item">
+                <p class="days__txt"></p>
+            </li>
+        </ul>
+    </article>
+</section>
+
+<!-- Tydzień 4 --> 
+<section id='weekFour' class="weekFour weeks">
+    <nav class="weekFour__menu menu">
+        <ul class="menu__list">
+            <li class="menu__item"><a href="#weekFourDayOne" class="menu__link">Dzień 1</a></li>
+            <li class="menu__item"><a href="#weekFourDayTwo" class="menu__link">Dzień 2</a></li>
+            <li class="menu__item"><a href="#weekFourDayThree" class="menu__link">Dzień 3</a></li>
+            <li class="menu__item"><a href="#weekFourDayFour" class="menu__link">Dzień 4</a></li>
+            <li class="menu__item"><a href="#weekFourDayFive" class="menu__link">Dzień 5</a></li>
+        </ul>
+    </nav>   
+<section class="weekFour__info info">
+    <h2 class="info__intro">Czwarty Tydzień</h2>
+    <ul class="info__list">
+        <li class="info__item">
+            <h3><a href="#weekFourDayOne" class="info__link">Dzień 1 </a></h3>
+            
+        </li>
+        <li class="info__item">
+            <h3><a href="#weekFourDayTwo" class="info__link">Dzień 2 </a></h3>
+            
+        </li>
+        <li class="info__item">
+            <h3><a href="#weekFourDayThree" class="info__link">Dzień 3 </a></h3>
+            
+        </li>
+        <li class="info__item">
+            <h3><a href="#weekFourDayFour" class="info__link">Dzień 4 </a></h3>
+            
+        </li>
+        <li class="info__item">
+            <h3><a href="#weekFourDayFive" class="info__link">Dzień 5 </a></h3>
+           
+        </li>
+    </ul>
+</section>
+<article id='weekFourDayOne' class="weekFour__days">
+    <h1 class="days__intro">Dzień 1 </h1>
+    <ul class="days__list">
+        <li class="days__item">
+          
+            <p class="days__txt"> </p>
+           
+        </li>
+       
+    </ul>
+</article>
+<article id='weekFourDayTwo' class="weekFour__days">
+    <h1 class="days__intro"></h1>
+    <ul class="days__list">
+        <li class="days__item">
+            <p class="days__txt"></p>
+        </li>
+    </ul>
+</article>
+<article id='weekFourDayThree' class="weekFour__days">
+    <h1 class="days__intro"></h1>
+    <ul class="days__list">
+        <li class="days__item">
+            <p class="days__txt"></p>
+        </li>
+    </ul>
+</article>
+<article id='weekFourDayFour' class="weekFour__days">
+    <h1 class="days__intro"></h1>
+    <ul class="days__list">
+        <li class="days__item">
+            <p class="days__txt"></p>
+        </li>
+    </ul>
+</article>
+<article id='weekFourDayFive' class="weekFour__days">
+    <h1 class="days__intro"></h1>
+    <ul class="days__list">
+        <li class="days__item">
+            <p class="days__txt">
+        </li>
+    </ul>
+</article>
+</section>
+
+<!-- Tydzień 5 --> 
+<section id='weekFive' class="weekFive weeks">
+    <nav class="weekFive__menu menu">
+        <ul class="menu__list">
+            <li class="menu__item"><a href="#weekFiveDayOne" class="menu__link">Dzień 1</a></li>
+            <li class="menu__item"><a href="#weekFiveDayTwo" class="menu__link">Dzień 2</a></li>
+            <li class="menu__item"><a href="#weekFiveDayThree" class="menu__link">Dzień 3</a></li>
+            <li class="menu__item"><a href="#weekFiveDayFour" class="menu__link">Dzień 4</a></li>
+            <li class="menu__item"><a href="#weekFiveDayFive" class="menu__link">Dzień 5</a></li>
+        </ul>
+    </nav>   
+<section class="weekFive__info info">
+    <h2 class="info__intro">Piąty Tydzień</h2>
+    <ul class="info__list">
+        <li class="info__item">
+            <h3><a href="#weekFiveDayOne" class="info__link">Dzień 1 </a></h3>
+            
+        </li>
+        <li class="info__item">
+            <h3><a href="#weekFiveDayTwo" class="info__link">Dzień 2 </a></h3>
+            
+        </li>
+        <li class="info__item">
+            <h3><a href="#weekFiveDayThree" class="info__link">Dzień 3 </a></h3>
+            
+        </li>
+        <li class="info__item">
+            <h3><a href="#weekTwoDayFour" class="info__link">Dzień 4</a></h3>
+            
+        </li>
+        <li class="info__item">
+            <h3><a href="#weekFiveDayFive" class="info__link">Dzień 5  </a></h3>
+           
+        </li>
+    </ul>
+</section>
+<article id='weekFiveDayOne' class="weekFive__days">
+    <h1 class="days__intro">Dzień 1 </h1>
+    <ul class="days__list">
+        <li class="days__item">
+           
+            <p class="days__txt"> </p>
+           
+        </li>
+        
+    </ul>
+</article>
+<article id='weekFiveDayTwo' class="weekFive__days">
+    <h1 class="days__intro"></h1>
+    <ul class="days__list">
+        <li class="days__item">
+            <p class="days__txt"></p>
+        </li>
+    </ul>
+</article>
+<article id='weekFiveDayThree' class="weekFive__days">
+    <h1 class="days__intro"></h1>
+    <ul class="days__list">
+        <li class="days__item">
+            <p class="days__txt"></p>
+        </li>
+    </ul>
+</article>
+<article id='weekFiveDayFour' class="weekFive__days">
+    <h1 class="days__intro"></h1>
+    <ul class="days__list">
+        <li class="days__item">
+            <p class="days__txt"></p>
+        </li>
+    </ul>
+</article>
+<article id='weekFiveDayFive' class="weekFive__days">
+    <h1 class="days__intro"></h1>
+    <ul class="days__list">
+        <li class="days__item">
+            <p class="days__txt"></p>
+        </li>
+    </ul>
+</article>
+</section>
+
+        <div class="upToHead">
+            <a class='upToHead__link' href="#mainMenu">Up</a>
+        </div>
         <footer class="footer"></footer>
     </div>  
 </body>

@@ -41,4 +41,10 @@ body { background-color: royalblue; }
 .days__image { width: 100%; padding: 10px; margin-top: 20px; }
 
 .days__txt { padding: 20px; letter-spacing: 1px; }
+
+.upToHead { position: fixed; right: 50px; bottom: 50px; border: solid 1px #1C2D61; background-color: #1C2D61; }
+
+.upToHead__link { display: block; text-decoration: none; color: white; font-size: 24px; padding: 15px 15px; -webkit-transition: 0.3s; transition: 0.3s; }
+
+.upToHead__link:hover { background-color: royalblue; color: black; }
 /*# sourceMappingURL=style.css.map */
