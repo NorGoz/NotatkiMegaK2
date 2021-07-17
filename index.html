@@ -376,26 +376,141 @@
             </ul>
         </article>
         <article id='weekTwoDayThree' class="weekTwo__days">
-            <h1 class="days__intro"></h1>
+            <h1 class="days__intro">Dzień 3 - Es6</h1>
             <ul class="days__list">
                 <li class="days__item">
-                    <p class="days__txt"></p>
+                    <p class="days__txt">Pierwsza edcyja 1997 ECMAScript 1</p>
                 </li>
+                <li class="days__item">
+                    <p class="days__txt">1998 ECMAScript 2 zmiany w zapisie </p>
+                </li>
+                <li class="days__item">
+                    <p class="days__txt">ECMAScript 3 1999</p>
+                </li>
+                <li class="days__item">
+                    <p class="days__txt"> 2009 ECMAScript 5 </p>
+                </li>
+                <li class="days__item">
+                    <p class="days__txt">2015 ECMAScript 6 :</p>
+                    <p class="days__item">- Parametry domyślne  np. function countGross(net = 23, vat = 23) { return net + net*vat; }</p>
+                    <p class="days__item">- destrukturyzacja w tablicach</p>
+                    <p class="days__item">- destrukturyzacja w obiektach</p>
+                    <img src="./photos/destrukturyzacja.png" alt="destrukturyzacja" class="days__image">
+                    
+                </li>
+                <li class="days__item">
+                    Spread operator - nowy zapis, który umożliwia rozbijanie iterowanej wartości na składowe. Mogą nią być string,tablica,obiekty.
+                    <img src="./photos/spreadoperator.png" alt="spread" class="days__image">
+                </li>
+                <li class="days__item">
+                    Rest operator - wygląda jak spread, różni się miejscem użycia - używany jako parametr funkcji. <br/>
+                    Zapis ten umożliwia zbieranie w jedną zmienną (będącą tablicą) wielu parametrów przekazywanych do funkcj
+                    <img src="./photos/restoperator.png" alt="rest" class="days__image">
+                    
+                </li>
+                <li class="days__item">
+                    String Templates 
+                    <img src="./photos/templatestring.png" alt="templatesString" class="days__image">
+                    
+                </li>
+                <li class="days__item">
+                    <h3>Ćwiczenie 1</h3>
+                    <p class="days__txt">const obj = { <br> 
+                    id:1, <br>
+                    name:'Tester Testowy', <br>
+                    pwdHash:'abcdasffg324325262sdfsdgs', <br>
+                    isAdmin: true, <br>
+                    hasAvatar: true, <br>
+                    }; <br>
+                    function filter(obj) //Funkcja ta powinna przyjąć pełen obiekt, ale zwrócić bezpieczny - z samym id,name i hasAvatar. <br>
+                    //Zastanów się nad użyciem destrukturyzacji w jednej linijce, a w drugiej wykorzystaj taką sama nazwę klucza i zmiennej
+
+            </p>
+            <img src="./photos/zadanieTydzien2Day3.png" alt="task" class="days__image">
+                </li>
+                <li class="days__item">
+                    <h3>Ćwiczenie 2</h3>
+                    <p class="days__txt">
+                        Przekształść info na Template Stringa
+                        const name ='Smbd Test'; <br>
+                        const age = 35; <br>
+                        const role = 'Admin'; <br>
+                        const info = name + 'has a role of' + role + 'and is born in year' + (new Date().getFullYear()-age); <br>
+                        console.log(info);
+                    </p>
+                    <img src="./photos/tydzien2ES6cw2.png" alt="task" class="days__image">
+                </li>
+               
             </ul>
         </article>
         <article id='weekTwoDayFour' class="weekTwo__days">
-            <h1 class="days__intro"></h1>
+            <h1 class="days__intro">Dzień 4 - klasy</h1>
             <ul class="days__list">
+                <li class="days__item">Porównanie 
+                    <img src="./photos/classvskiedys.png" alt="class" class="days__image">
+                    <p class="days__txt">Przykładowa klasa</p>
+                    <img src="./photos/przykladowklasa.png" alt="class" class="days__image">
+                </li>
                 <li class="days__item">
-                    <p class="days__txt"></p>
+                    <h3>Ćwiczenie 1 </h3>
+                    <p class="days__txt">
+                        * 1. Stwórz właściwość przechowującą zajęte miejsca w zawodach. <br>
+                        * 2. Stwórz metodę, która pozwoli dodać nowe zajęte miejsce do właściwości danego obiektu. <br>
+                        * 3. Stwórz dwa obiekty reprezentujące 2 kraje i dodaj do nich kilka zajętych miejsc, używając przygotowanej przes siebie metody możesz ją wywoływac wielokrotnie). <br>
+                        * 4.* Dodaj metodę, która sprawdzi czy kraj posiada jakiekolwiek pierwsze miejsce i jeżeli tak to wyświetl "Brawo!".
+                    </p>
+                    <img src="./photos/zadanieTydzien2KLASY1.png" alt="zadanie" class="days__image">
                 </li>
             </ul>
         </article>
         <article id='weekTwoDayFive' class="weekTwo__days">
-            <h1 class="days__intro"></h1>
+            <h1 class="days__intro">Dzień 5 - Zaawansowane operacje na tablicach</h1>
             <ul class="days__list">
                 <li class="days__item">
+                    <h3>forEach</h3>
+                    <p class="days__txt">forEach - Wykonuje dostarczoną funkcję jeden raz na każdy element tablicy. Przekształca tablice na której jest wykonywany.</p>
+                    <img src="./photos/forEach.png" alt="forEach" class="days__image">
+                </li>
+                <li class="days__item">
+                    <h3>map</h3>
+                    <p class="days__txt">map - tworzy nową tablicę zawierającą wyniki wywoływania podanej funkcji dla każdego elementu wywołującej tablicy.</p>
+                    <img src="./photos/map.png" alt="map" class="days__image">
+                </li>
+                <li class="days__item">
+                    <h3>filter</h3>
+                    <p class="days__txt">filter - tworzy nową tablicę z wszystkimi elementami, które przechodzą test określony w postaci funkcji.</p>
+                    <img src="./photos/filter.png" alt="filter" class="days__image">
+                </li>
+                <li class="days__item">
+                    <p class="days__txt">Możemy łączyć metody,przypisywać callback'i do zmiennych</p>
+                    <img src="./photos/laczenieMetod.png" alt="metody" class="days__image">
+                </li>
+                <li class="days__item">
+                    <h3>every</h3>
                     <p class="days__txt"></p>
+                </li>
+                <li class="days__item">
+                    <h3>some</h3>
+                    <p class="days__txt"></p>
+                </li>
+                <li class="days__item">
+                    <h3>Ćwiczenie 1</h3>
+                    <p class="days__txt">
+                        * Używaj w zadaniach metod tablicowych! <br>
+                        * 1. Wylicz średnią ocen. <br>
+                        * 2. Następnie wypisz wszystkie oceny min. 4. <br>
+                        const grades = [3, 4, 5, 6, 3, 4, 2, 5, 6]; <br>
+                    </p>
+                </li>
+                <li class="days__item">
+                    <h3>Ćwiczenie 2</h3>
+                    <p class="days__txt">
+                         Napisz kod, który za pomocą jednego ciągu (możesz skorzystać z programowania funkcyjnego i rozdzielić na funkcje) osiągnie następujący efekt: <br>
+                         Wyświetli pojedynczo każdą nazwę miasta, która ma parzystą liczbę znaków. Nazwy miast powinny być pisane wielkimi literami. <br>
+                                <br>
+                        const cities = ['Wrocław', 'Poznań', 'Kraków', 'Warszawa', 'Katowice', 'Bytom', 'Jelenia Góra', 'Jastrzębie-Zdrój', 'Rabka-Zdrój'];
+                    </p>
+                    <img src="./photos/ZaawansowaneTabliceZad2.png" alt="zadanie" class="days__image">
                 </li>
             </ul>
         </article>
@@ -473,7 +588,7 @@
         </ul>
     </article>
     <article id='weekThreeDayThree' class="weekThree__days">
-        <h1 class="days__intro"></h1>
+        <h1 class="days__intro">Nowoczesna obsługa asynchroniczności w JavaScript</h1>
         <ul class="days__list">
             <li class="days__item">
                 <p class="days__txt"></p>
