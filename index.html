@@ -501,6 +501,7 @@
                         * 2. Następnie wypisz wszystkie oceny min. 4. <br>
                         const grades = [3, 4, 5, 6, 3, 4, 2, 5, 6]; <br>
                     </p>
+                    <img src="./photos/tydzien2dzien5Zad1.png" alt="zadanie" class="days__image">
                 </li>
                 <li class="days__item">
                     <h3>Ćwiczenie 2</h3>
@@ -535,19 +536,19 @@
                 
             </li>
             <li class="info__item">
-                <h3><a href="#weekThreeDayTwo" class="info__link">Dzień 2 </a></h3>
+                <h3><a href="#weekThreeDayTwo" class="info__link">Dzień 2 - Nowoczesna obsługa asynchroniczności w JavaScript </a></h3>
                 
             </li>
             <li class="info__item">
-                <h3><a href="#weekThreeDayThree" class="info__link">Dzień 3 </a></h3>
+                <h3><a href="#weekThreeDayThree" class="info__link">Dzień 3 - async/await </a></h3>
                 
             </li>
             <li class="info__item">
-                <h3><a href="#weekThreeDayFour" class="info__link">Dzień 4 </a></h3>
+                <h3><a href="#weekThreeDayFour" class="info__link">Dzień 4 - JavaScript DOM </a></h3>
                 
             </li>
             <li class="info__item">
-                <h3><a href="#weekThreeDayFive" class="info__link">Dzień 5  </a></h3>
+                <h3><a href="#weekThreeDayFive" class="info__link">Dzień 5 - localStorage </a></h3>
                
             </li>
         </ul>
@@ -580,32 +581,114 @@
         </ul>
     </article>
     <article id='weekThreeDayTwo' class="weekTwo__days">
-        <h1 class="days__intro"></h1>
+        <h1 class="days__intro"> Dzień 2 - Nowoczesna obsługa asynchroniczności w JavaScript</h1>
         <ul class="days__list">
             <li class="days__item">
-                <p class="days__txt"></p>
+                Asynchroniczność kiedyś
+                <img src="./photos/asynchronicznieKiedys.png" alt="asynchronicznieKiedys" class="days__image">
             </li>
+            <li class="days__item">
+                <h3>Nowsze rozwiązanie - Promises</h3>
+                <p class="days__txt">Promises - Warstwa abstrakcji na zadania asynchroniczne w JavaScript</p>
+                <p class="days__txt">Stany promise <=====================================>   Ścieżki promise </br>
+                    oczekujący - pending  <================================> 1. oczekujący </br>
+                    spełniony - fulfilled  <==================================> 2. oczekujący -> spełniony </br>
+                    odrzucony -rejected  <==================================> 3.oczekujący -> odrzucony
+                </p>
+                <p class="days__txt">fetch - metoda, która zapewnia łatwy, logiczny sposób asynchronicznego pobierania zasobów w sieci.</p>
+                <img src="./photos/fetchPrzyklad.png" alt="fetch" class="days__image">
+            </li>
+            <li class="days__item">
+                <h3>Zadanie 1</h3>
+                <p class="days__txt">Zadanie (w przeglądarce!) <br>
+                    Przyjmuj w przeglądarce przez prompt-a ISBN. Następnie korzystając z poniższego API: <br>
+                    https://www.googleapis.come/books/v1/volumes?q=isbn:  i na końcu numer ISBN <br>
+                    Wyświetl zwracane dane. <br>
+                    *Wyświetl w konsoli autora i tytuł książki.
+                </p>
+                <img src="./photos/tydzien3Dzien2Zad1.png" alt="zad" class="days__image">
+            </li>
+          
         </ul>
     </article>
     <article id='weekThreeDayThree' class="weekThree__days">
-        <h1 class="days__intro">Nowoczesna obsługa asynchroniczności w JavaScript</h1>
+        <h1 class="days__intro">Dzień 3 - async/await </h1>
         <ul class="days__list">
+            <li class="days__item">async/await
+                <p class="days__txt">Zyskujemy : <br> 1. Kod jest bardzo czytelny - niemal identyczny jak synchroniczny. <br>
+                2. Kod jest bardzo przepustowy - tam gdzie nie musisz - nie blokuje głównego
+                </p>
+                Przykład zastosowania:
+                <img src="./photos/asyncPrzyklad.png" alt="async" class="days__image">
+                Przykład zaawansowanego zastosowania:
+                <img src="./photos/herbataJakuba.png" alt="async" class="days__image">
+            </li>
             <li class="days__item">
-                <p class="days__txt"></p>
+                <h3>Zadanie 1</h3>
+                <p class="days__txt"> 
+                    Przyjmuj w przeglądarce przez prompt-a ISBN. Następnie korzystając z poniższego API: <br>
+                    https://www.googleapis.come/books/v1/volumes?q=isbn:  i na końcu numer ISBN <br>
+                    Wyświetl zwracane dane. <br>
+                    *Wyświetl w konsoli autora i tytuł książki.
+                </p>
+                <img src="./photos/asyncZadanie1.png" alt="zad" class="days__image">
             </li>
         </ul>
     </article>
     <article id='weekThreeDayFour' class="weekThree__days">
-        <h1 class="days__intro"></h1>
+        <h1 class="days__intro">Dzień 4 - JavaScript DOM - DOM, Web API / API przeglądrkowe</h1>
         <ul class="days__list">
             <li class="days__item">
+                <p class="days__txt">DOM - HTML zmieniany jest przez przeglądarkę w reprezentację 
+                    zwaną Document Object Model (Model obiektowy dokumentu)</p>
+                <p class="days__txt">DOM - to zbiór obiektów (węzłów), tworzonych przede wszystkim przez znaczniki, atrybuty i zawartość tekstową.
+                    DOM ustawia węzły w strukturze typu drzewo co tworzy między nimi relacje i zagnieżdzenia
+                   </p>
+            </li>
+            <li class="days__item">W drzewie DOM mówimy o relacjach - podobnych do rodziny
+                <p class="days__txt">elementy mogą posiadać: <br>
+                    -rodzice - ma element pod sobą <br>
+                    -rodzeństwo - elementy są na tym samym poziomie <br>
+                    -dzieci - jest elementem pod innym <br>
+                    API przeglądarki pozwala poruszać się po drzewie DOM używając tych nazw.
+                </p>
+            </li>
+            <li class="days__item"> Przykład :
+                <img src="./photos/javaDOM (2).png" alt="javaDOM" class="days__image">
                 <p class="days__txt"></p>
             </li>
+           
         </ul>
     </article>
     <article id='weekThreeDayFive' class="weekThree__days">
-        <h1 class="days__intro"></h1>
+        <h1 class="days__intro">dzień 5 localStorage, czyli zapis loklany</h1>
         <ul class="days__list">
+            <li class="days__item">
+                <p class="days__txt">localStorage - To jeden z prostszych sposobów zapisywania na urzaczeniu lokalnym(m.in. w przeglądarce) pewnych informacji tekstowych. <br>
+                    Wyglądaja one jak prsote zmienne typu string. <br>
+                    Dlatego ze kazda informacja posiada nazwe i wartość tekstowa
+                    </p>
+                    Sposób działania :
+                    <img src="./photos/PrzykładLocalStorage.png" alt="localStorage" class="days__image">
+            </li>
+            <li class="days__item">Dlaczego localStorage jest fajne:
+                <p class="days__txt">- Pozwala szybko przechowac informacje na czyimś komputerze <br>
+                    -Na ten moment nie wymaga zgody właściciela urzadzenia <br>
+                    -jest bardzo prosty w obsłudze <br>
+                    -działa lokalnie - to nie back-end</p>
+                    Clicker z pomocą localStorage. Klikamy x razy i potem jak wejdziemy liczy nam od tej liczby a nie od 0 :
+                    <img src="./photos/ClickerLocalStorage.png" alt="Clicker" class="days__image">
+            </li>
+            <li class="days__item">JSON
+                <p class="days__txt">JASON (JavaScript Object Notation) - JSON to lekki, tekstowy format wymmiany danych między różnymi programami, API itd. <br>
+                    Pozwala przechowywać liczby,teskts,wartości typu boolean, null,tablice i obiekty zawierające powyższe - w formie tekstowej
+                    Link warty zapamiętania :https://www.jsoneditoronline.org/</p>
+                    <p class="days__txt">Metody JSON : <br>
+                        stringify - zmienia z zapisu JSON na stringa <br>
+                        parse - zmienia na obiekt JavaScript
+                    </p>
+                    <img src="./photos/metodyJson.png" alt="JSON" class="days__image">
+            </li>
             <li class="days__item">
                 <p class="days__txt"></p>
             </li>
@@ -628,7 +711,7 @@
     <h2 class="info__intro">Czwarty Tydzień</h2>
     <ul class="info__list">
         <li class="info__item">
-            <h3><a href="#weekFourDayOne" class="info__link">Dzień 1 </a></h3>
+            <h3><a href="#weekFourDayOne" class="info__link">Dzień 1 - Więcej o tablicach i pętlach</a></h3>
             
         </li>
         <li class="info__item">
@@ -649,14 +732,32 @@
         </li>
     </ul>
 </section>
+
 <article id='weekFourDayOne' class="weekFour__days">
-    <h1 class="days__intro">Dzień 1 </h1>
+    <h1 class="days__intro">Dzień 1 - Więcej o tablicach i pętlach </h1>
     <ul class="days__list">
         <li class="days__item">
+            <h3>Pętla for of</h3>
           
-            <p class="days__txt"> </p>
+            <p class="days__txt">for of - Nowoczesna iteracja po wszystkich elementach tablicy, działa podobnie do tablica.forEach, ale ma składnię fora, dzięki czemu jest prostsza, może prosto działać z async/await itd.</p>
+            <img src="./photos/forOfPorównanie.png" alt="forOf" class="days__image">
+        </li>
+        <li class="days__item"> Metody na obiektach
+          
+            <p class="days__txt">Object.keys() - pobiera klucze obiektu <br> Object.values() - pobiera wartości obiektu <br> Object.entries - pobiera klucz i wartość obiektu, umieszcza je w tablicy tablic</p>
+            <img src="./photos/metodyNaObiektach.png" alt="metodyNaObiektach" class="days__image">
            
         </li>
+        <li class="days__item"> Zastosowanie metody na obiektach i for of :
+            <img src="./photos/metodyPlusForOf.png" alt="metodyNaObiektach" class="days__image">
+        </li>
+        <li class="days__item">
+            <h3>Zaawansowana metoda tablicowa</h3>
+          Array.reduce 
+          <img src="./photos/reduceZastosowanie.png" alt="reduce" class="days__image">
+           
+        </li>
+       
        
     </ul>
 </article>
